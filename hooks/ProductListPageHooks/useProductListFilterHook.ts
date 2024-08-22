@@ -54,7 +54,7 @@ const useProductListingFilterHook = () => {
     } else {
       setSelectedFilters([]);
     }
-  }, [query]);
+  }, [query?.category]);
 
   const handleFilterCheckFun = async (event: any) => {
     let duplicateFilters: any;
